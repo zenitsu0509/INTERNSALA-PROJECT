@@ -51,4 +51,3 @@ class TextExtraction:
                 extracted_text += f"\n--- Page {page_num} ---\n{page_text}"
             
         return extracted_text
-            

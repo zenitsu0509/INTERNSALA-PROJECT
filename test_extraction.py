@@ -6,8 +6,7 @@ from PIL import Image
 
 class TextExtraction:
     def __init__(self):
-        pass
-    
+        pass  
     def extract_image_info(self, image):
         if image.mode != 'RGB':
             image = image.convert('RGB')
@@ -33,8 +32,6 @@ class TextExtraction:
         text = pytesseract.image_to_string(thresh, config=custom_config)
             
         return " ".join(text.split())
-
-
     def extract_pdf_info(self, pdf_path):
 
         images = convert_from_path(

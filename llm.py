@@ -51,7 +51,6 @@ def generate_response(text):
 
     The Post Data you have is: {textdata}                                               
     """
-
     response = llm.generate(prompts=[prompt])
     return list(list(response)[0])[1][0][0].text
 text_extractor = TextExtraction()
